@@ -75,7 +75,7 @@ public class LogTail {
                         if (os.size() > 0)
                             asyncOnSubscribe.onNext(new LogTailEvent(logName, os));
                     } catch (IOException ex) {
-
+                        ex.printStackTrace();
                     }
                 }
             };
